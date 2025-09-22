@@ -1,201 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ultimate Website – Professional Website Solutions</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <style>
-    body { margin:0; font-family: Arial, sans-serif; background:#f5f5f5; color:#333; }
-    header { background:#1e3a8a; color:white; padding:1rem 2rem; display:flex; justify-content:space-between; align-items:center; }
-    header h1 { margin:0; font-size:1.8rem; }
-    nav a { color:white; margin-left:1rem; text-decoration:none; font-weight:bold; }
-    nav a:hover { text-decoration:underline; }
-    section { padding:3rem 2rem; max-width:1000px; margin:auto; }
-    .hero { background:#3b82f6; color:white; text-align:center; padding:5rem 2rem; }
-    .hero h2 { font-size:2.5rem; margin-bottom:1rem; }
-    .hero p { font-size:1.2rem; margin-bottom:2rem; }
-    .hero button { padding:1rem 2rem; margin:0.5rem; background:#1e3a8a; color:white; border:none; border-radius:6px; cursor:pointer; font-size:1rem; }
-    .hero button:hover { background:#162b66; }
-    .pricing-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:1.5rem; }
-    .card { background:white; padding:1.5rem; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.1); }
-    .card h3 { margin-top:0; }
-    .reviews { display:grid; gap:1rem; }
-    .review { background:white; padding:1rem; border-left:4px solid #1e3a8a; border-radius:4px; }
-    footer { background:#1e3a8a; color:white; text-align:center; padding:1rem; margin-top:2rem; }
-    .chatbot { position:fixed; bottom:20px; right:20px; background:#1e3a8a; color:white; border-radius:50%; width:60px; height:60px; display:flex; align-items:center; justify-content:center; cursor:pointer; font-size:1.5rem; z-index:1000; }
-    .chat-window { position:fixed; bottom:90px; right:20px; width:300px; max-height:400px; background:white; border:1px solid #ccc; border-radius:8px; display:flex; flex-direction:column; z-index:1000; display:none; }
-    .chat-messages { flex:1; overflow-y:auto; padding:0.5rem; font-size:0.9rem; }
-    .chat-messages div { margin:0.25rem 0; }
-    .chat-input { display:flex; border-top:1px solid #ccc; }
-    .chat-input input { flex:1; border:none; padding:0.5rem; }
-    .chat-input button { background:#1e3a8a; color:white; border:none; padding:0.5rem 1rem; cursor:pointer; }
-    a.button { display:inline-block; padding:0.75rem 1.5rem; background:#1e3a8a; color:white; border-radius:6px; text-decoration:none; margin:0.25rem; }
-    a.button:hover { background:#162b66; }
-    table { width:100%; border-collapse:collapse; margin-top:1rem; }
-    table th, table td { border:1px solid #ccc; padding:0.75rem; text-align:left; }
-  </style>
+  <title>Ultimate Website - Home</title>
 </head>
 <body>
-
-<header>
-  <h1>Ultimate Website</h1>
   <nav>
-    <a href="#home">Home</a>
-    <a href="#pricing">Pricing</a>
-    <a href="#demo">Demo</a>
-    <a href="#reviews">Reviews</a>
-    <a href="#contact">Contact</a>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="contact.html">Contact</a>
   </nav>
-</header>
 
-<section id="home" class="hero">
-  <h2>Professional Websites Tailored for Your Business</h2>
-  <p>Ultimate Website builds responsive, fast, and modern websites for businesses of all sizes. Explore our plans, see live examples, and let our AI assistant help you anytime.</p>
-  <button onclick="location.href='#pricing'">See Pricing</button>
-  <button onclick="location.href='#demo'">View Demo</button>
-  <button onclick="location.href='#contact'">Contact Us</button>
-</section>
-
-<section id="pricing" class="section">
-  <h2>Our Plans</h2>
-  <div class="pricing-grid">
-    <div class="card">
-      <h3>Beginner Website</h3>
-      <p><strong>$499 AUD</strong></p>
-      <ul>
-        <li>5 Pages</li>
-        <li>Responsive Design</li>
-        <li>Basic SEO</li>
-        <li>Contact Form</li>
-      </ul>
-      <a class="button" href="#demo">View Example</a>
-      <a class="button" href="#checkout">Select Plan</a>
-    </div>
-    <div class="card">
-      <h3>Advanced Website</h3>
-      <p><strong>$1,299 AUD</strong></p>
-      <ul>
-        <li>Up to 15 Pages</li>
-        <li>Custom Design</li>
-        <li>E-commerce Ready</li>
-        <li>Advanced SEO</li>
-      </ul>
-      <a class="button" href="#demo">View Example</a>
-      <a class="button" href="#checkout">Select Plan</a>
-    </div>
-    <div class="card">
-      <h3>Pro Level Website</h3>
-      <p><strong>$2,499 AUD</strong></p>
-      <ul>
-        <li>Unlimited Pages</li>
-        <li>Full Custom Features</li>
-        <li>Integrations & Automations</li>
-        <li>Priority Support</li>
-      </ul>
-      <a class="button" href="#demo">View Example</a>
-      <a class="button" href="#checkout">Select Plan</a>
-    </div>
-  </div>
-</section>
-
-<section id="demo" class="section">
-  <h2>Demo Websites</h2>
-  <p>See examples of what your chosen website plan could look like:</p>
-  <div class="pricing-grid">
-    <div class="card">Example Beginner Site Preview</div>
-    <div class="card">Example Advanced Site Preview</div>
-    <div class="card">Example Pro Site Preview</div>
-  </div>
-</section>
-
-<section id="reviews" class="section">
-  <h2>Customer Reviews</h2>
-  <div class="reviews" id="reviewList">
-    <!-- Live reviews will appear here -->
-  </div>
-  <h3>Submit Your Review</h3>
-  <input type="text" id="reviewerName" placeholder="Your Name"/><br/>
-  <textarea id="reviewText" placeholder="Your Review"></textarea><br/>
-  <button onclick="submitReview()">Submit Review</button>
-</section>
-
-<section id="contact" class="section">
-  <h2>Contact Us</h2>
-  <p>Phone: <strong>+61 4XX XXX XXX</strong></p>
-  <p>Email: <a href="mailto:info@ultimatewebsite.com">info@ultimatewebsite.com</a></p>
-  <form id="contactForm">
-    <input type="text" placeholder="Your Name" required/><br/>
-    <input type="email" placeholder="Your Email" required/><br/>
-    <textarea placeholder="Your Message" required></textarea><br/>
-    <button type="submit">Send Message</button>
-  </form>
-</section>
-
-<footer>
-  <p>&copy; 2025 Ultimate Website. All rights reserved.</p>
-</footer>
-
-<div class="chatbot" onclick="toggleChat()">💬</div>
-<div class="chat-window" id="chatWindow">
-  <div class="chat-messages" id="chatMessages">
-    <div><strong>AI:</strong> Hi! I’m your Ultimate Website assistant. How can I help today?</div>
-  </div>
-  <div class="chat-input">
-    <input id="chatInput" type="text" placeholder="Type a message..." />
+  <h1>Welcome to Ultimate Website</h1>
+  <p>We build professional websites for businesses of all sizes.</p>
+  <button onclick="location.href='pricing.html'">See Our Plans</button>
+<div id="chatbot" style="position:fixed;bottom:20px;right:20px;width:300px;height:400px;background:#f1f1f1;border:1px solid #ccc;padding:10px;">
+    <h3>Chat with us</h3>
+    <div id="chatbox" style="height:300px;overflow:auto;border:1px solid #ccc;padding:5px;background:white;"></div>
+    <input type="text" id="userInput" placeholder="Type your question..." style="width:80%;">
     <button onclick="sendMessage()">Send</button>
   </div>
-</div>
 
-<script>
-  // Chatbot functions
-  function toggleChat() {
-    const chat = document.getElementById('chatWindow');
-    chat.style.display = (chat.style.display==='none'||chat.style.display==='') ? 'flex' : 'none';
-  }
+  <script>
   function sendMessage() {
-    const input=document.getElementById('chatInput');
-    const msg=input.value.trim();
-    if(!msg) return;
-    const messages=document.getElementById('chatMessages');
-    const userDiv=document.createElement('div');
-    userDiv.innerHTML=`<strong>You:</strong> ${msg}`;
-    messages.appendChild(userDiv);
-    input.value='';
-    // Demo AI response
-    setTimeout(()=>{
-      const aiDiv=document.createElement('div');
-      aiDiv.innerHTML=`<strong>AI:</strong> Thanks for asking "${msg}". Our team will contact you if needed!`;
-      messages.appendChild(aiDiv);
-      messages.scrollTop=messages.scrollHeight;
-    },700);
-  }
+    var input = document.getElementById("userInput").value;
+    var chatbox = document.getElementById("chatbox");
+    if(input.trim() === "") return;
 
-  // Demo live reviews system (uses localStorage for now)
-  function submitReview(){
-    const name=document.getElementById('reviewerName').value.trim();
-    const text=document.getElementById('reviewText').value.trim();
-    if(!name||!text){alert('Please enter both name and review.'); return;}
-    const reviews=JSON.parse(localStorage.getItem('reviews')||'[]');
-    reviews.push({name,text});
-    localStorage.setItem('reviews',JSON.stringify(reviews));
-    loadReviews();
-    document.getElementById('reviewerName').value='';
-    document.getElementById('reviewText').value='';
+    chatbox.innerHTML += "<p><b>You:</b> " + input + "</p>";
+
+    var response = "";
+    if(input.toLowerCase().includes("price")) {
+      response = "You can see our pricing <a href='pricing.html'>here</a>.";
+    } else if(input.toLowerCase().includes("contact")) {
+      response = "You can contact us <a href='contact.html'>here</a>.";
+    } else {
+      response = "Thank you for your message! We will contact you shortly.";
+    }
+
+    chatbox.innerHTML += "<p><b>Bot:</b> " + response + "</p>";
+    chatbox.scrollTop = chatbox.scrollHeight;
+    document.getElementById("userInput").value = "";
   }
-  function loadReviews(){
-    const reviews=JSON.parse(localStorage.getItem('reviews')||'[]');
-    const list=document.getElementById('reviewList');
-    list.innerHTML='';
-    reviews.forEach(r=>{
-      const div=document.createElement('div');
-      div.className='review';
-      div.innerHTML=`<strong>${r.name}:</strong> ${r.text}`;
-      list.appendChild(div);
-    });
-  }
-  loadReviews();
-</script>
+  </script>
 
 </body>
 </html>
